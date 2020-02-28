@@ -1,0 +1,26 @@
+class Dog(object):
+    def __init__(self, name, age):
+        self.__name = name
+        self.age = age
+
+    def DogData(self):
+        return '{} {}'.format(self.__name, self.age)
+
+    @property
+    def change_dog_age(self, age):
+        print (Dog.DogData(new_dog.age))
+
+    @change_dog_age.setter
+    def change_dog_age(self, age):
+        self.age = age
+        str(age)
+        print(new_dog.__name + " just had a birthday! He is now " + str(age))
+
+    def getDogData():
+        return Dog.name
+        return Dog.age
+
+new_dog = Dog('charlie', 2)
+new_dog.change_dog_age = 5
+new_dog.age = 3
+print(new_dog.age)
